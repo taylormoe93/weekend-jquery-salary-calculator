@@ -40,3 +40,25 @@ Stretch | optional, stretches your understanding and may require additional rese
 
 ## Assignment Submission
 Check in your repo, then turn in your work via the Prime Academy Assignment Application at [http://primeacademy.io](http://primeacademy.io), as usual and don't hesitate to hit up the Slack channel as needed!
+
+
+----------------
+
+An INPUT that collects:
+- employee first name
+- last name
+- ID number
+- job title 
+- annual salary
+
+A submit BUTTON: 
+- that collects the form information
+- stores the information to calculate monthly costs
+- append information to the DOM
+- clear the (earlier referenced) input fields
+
+IF (statement) the total monthly cost exceeds $20,000, 
+then add a red background color to the total monthly cost INPUT.
+
+A delete BUTTON:
+- removes an employee from the DOM
