@@ -54,7 +54,7 @@ An INPUT that collects:
 A submit BUTTON: 
 - that collects the form information
 - stores the information to calculate monthly costs
-- append information to the DOM
+- append information to the DOM (html table)
 - clear the (earlier referenced) input fields
 
 IF (statement) the total monthly cost exceeds $20,000, 
@@ -62,3 +62,4 @@ then add a red background color to the total monthly cost INPUT.
 
 A delete BUTTON:
 - removes an employee from the DOM
+
