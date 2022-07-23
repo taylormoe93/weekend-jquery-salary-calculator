@@ -10,13 +10,46 @@
     <title>Salary Calculator</title>
     <heading>Salary Calculator</heading>
 </head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
 <body>
     <h1>Add Employee</h1>
+
+    <!-- INPUTS -->
     <input placeholder="First Name" id="firstNameInput" />
     <input placeholder="Last Name" id="lastNameInput" />
     <input placeholder="ID Number" id="idInput" />
     <input placeholder="Job Title" id="titleInput" />
     <input placeholder="Annual Salary" id="salaryInput" />
+    
+    <!-- SUBMIT BUTTON -->
     <button id="submitButton">Submit</button>
+   
+    <!-- EMPLOYEE INFO TABLE -->
+<table style="width:55%">
+        <!-- Headers -->
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Annual Salary</th>
+        <th></th>
+    </tr>
+        <!-- Variable Cells -->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+</table>
 </body>
+
 </html>

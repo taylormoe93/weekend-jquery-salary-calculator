@@ -18,11 +18,19 @@ function infoSubmit() {
     let jobTitle = $( '#titleInput' ).val();
     let salary = $( '#salaryInput' ).val(); 
     
+
+
+
+
+
+
+    
     //empty inputs
     $( '#firstNameInput' ).val( '' );
     $( '#lastNameInput' ).val( '' );
     $( '#idInput' ).val( '' );
     $( '#titleInput' ).val( '' );
     $( '#salaryInput' ).val( '' );
+
 } // end infoSubmit function
 
