@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,18 @@
     <script src="jquery-3.6.0.min.js"></script>
     <script src="client.js"></script>
     <title>Salary Calculator</title>
-    <heading>Salary Calculator</heading>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Add Employee</h1>
+<div class="header">
+    <h1>Salary Calculator</h1>
+    <p>Add Employee</p>
+</div>
 
     <!-- INPUTS -->
     <input placeholder="First Name" id="firstNameInput" />
@@ -42,7 +50,7 @@
 </tbody>
     
 </table>
-    <div>
+    <div class="counterFooter">
         <h1 id="totalMonthlyCounter">Total Monthly: <span id="monthlyCounter">0</span></h1>
     </div> 
    
