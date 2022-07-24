@@ -1,15 +1,23 @@
-console.log('client.js loaded');
+console.log('client.js loaded'); // connected with JS
 
-$(document).ready(handleReady);
+$(document).ready(handleReady); // DOM has been loaded
 
-let totalMonthly = 0;
+let totalMonthly = 0; // declare totalMonthly variable in global scope
 
+// handleReady function holds the submit button click listener
+// and the delete button click listener
 function handleReady() {
     console.log('Document ready');
     //click handlers go here
-    $( '#submitButton' ).on( 'click', infoSubmit )
-    $( '#tableContainer' ).on( 'click', '.deleteButton', removeInfo )
+    $( '#submitButton' ).on( 'click', infoSubmit ) // Submit button
+    $( '#tableContainer' ).on( 'click', '.deleteButton', removeInfo ) // Delete button
 } // end handleReady function
+
+// infoSubmit function declares variables for the inputs, 
+// captures the inputted info,
+// appends it to the table,
+// empties the inputs,
+// and then calculates the monthly cost
 
 function infoSubmit() {
     console.log( 'in infoSubmit' );
@@ -41,22 +49,18 @@ function infoSubmit() {
     $( '#salaryInput' ).val( '' );
 
     //Monthly cost calculator
-    // let monthlyCosts =
-    // Take the inputted info and put it into a variable that displays on bottom of screen as a heading.
-    // Link to the heading with an id and use jquery to update the heading with the number.
-
         totalMonthly =  totalMonthly + (salary / 12);
         $('#monthlyCounter').empty();
         $('#monthlyCounter').append(Math.round(totalMonthly));
         console.log(totalMonthly);
-
+        // if totalMonthly is over 20000 then make the counter red
         if(totalMonthly > 20000) {
             $('#totalMonthlyCounter').css({"background-color": "red"});
         }
 
 } // end infoSubmit function
 
-
+// removeInfo function deletes a row from the table when the Delete button is clicked
 function removeInfo() {
     console.log( 'User info deleted' );
     $(this).closest('tr').remove();
