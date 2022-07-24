@@ -4,7 +4,7 @@ $(document).ready(handleReady);
 
 function handleReady() {
     console.log('Document ready');
-    //click handlers go here. The two buttons. 
+    //click handlers go here
     $( '#submitButton' ).on('click', infoSubmit )
 } // end handleReady function
 
@@ -25,8 +25,6 @@ function infoSubmit() {
     $( '#titleCell' ).append( '<tr><td>' + jobTitle + '</tr></td>' );
     $( '#salaryCell' ).append( '<tr><td>' + salary + '</tr></td>' );
 
-
-
     //empty inputs
     $( '#firstNameInput' ).val( '' );
     $( '#lastNameInput' ).val( '' );
@@ -34,5 +32,14 @@ function infoSubmit() {
     $( '#titleInput' ).val( '' );
     $( '#salaryInput' ).val( '' );
 
+    //Monthly cost calculator
+    // let monthlyCosts =
+    // Take the inputted info and put it into a variable that displays on bottom of screen as a heading.
+    // Link to the heading with an id and use jquery to update the heading with the number.
+
+
+
+
 } // end infoSubmit function
+
 

@@ -45,16 +45,16 @@ Check in your repo, then turn in your work via the Prime Academy Assignment Appl
 ----------------
 
 An INPUT that collects:
-- employee first name
-- last name
-- ID number
-- job title 
-- annual salary
+X employee first name
+X last name
+X ID number
+X job title 
+X annual salary
 
 A submit BUTTON: 
-- that collects the form information
+X that collects the form information
 - stores the information to calculate monthly costs
-- append information to the DOM (html table)
+X append information to the DOM (html table)
 - clear the (earlier referenced) input fields
 
 IF (statement) the total monthly cost exceeds $20,000, 
@@ -64,4 +64,4 @@ A delete BUTTON:
 - removes an employee from the DOM
 
 Table:
-- Duplicates to a new cell and fills with inputted info (check color block for code). Looks like an append?
+X Duplicates to a new cell and fills with inputted info (check color block for code). Looks like an append?
