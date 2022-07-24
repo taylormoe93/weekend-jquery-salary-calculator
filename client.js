@@ -44,9 +44,15 @@ function infoSubmit() {
     // let monthlyCosts =
     // Take the inputted info and put it into a variable that displays on bottom of screen as a heading.
     // Link to the heading with an id and use jquery to update the heading with the number.
-    
 
+        totalMonthly =  totalMonthly + (salary / 12);
+        $('#monthlyCounter').empty();
+        $('#monthlyCounter').append(Math.round(totalMonthly));
+        console.log(totalMonthly);
 
+        if(totalMonthly > 20000) {
+            $('#totalMonthlyCounter').css({"background-color": "red"});
+        }
 
 } // end infoSubmit function
 

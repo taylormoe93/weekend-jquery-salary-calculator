@@ -53,15 +53,15 @@ X annual salary
 
 A submit BUTTON: 
 X that collects the form information
-- stores the information to calculate monthly costs
+X stores the information to calculate monthly costs
 X append information to the DOM (html table)
-- clear the (earlier referenced) input fields
+X clear the (earlier referenced) input fields
 
 IF (statement) the total monthly cost exceeds $20,000, 
 then add a red background color to the total monthly cost INPUT.
 
 A delete BUTTON:
-- removes an employee from the DOM
+X removes an employee from the DOM
 
 Table:
 X Duplicates to a new cell and fills with inputted info (check color block for code). Looks like an append?
