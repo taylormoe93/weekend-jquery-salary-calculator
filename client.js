@@ -2,11 +2,13 @@ console.log('client.js loaded');
 
 $(document).ready(handleReady);
 
+let totalMonthly = 0;
+
 function handleReady() {
     console.log('Document ready');
     //click handlers go here
     $( '#submitButton' ).on( 'click', infoSubmit )
-    $( '#deleteButton' ).on( 'click', removeInfo )
+    $( '#tableContainer' ).on( 'click', '.deleteButton', removeInfo )
 } // end handleReady function
 
 function infoSubmit() {
@@ -17,14 +19,19 @@ function infoSubmit() {
     let lastName = $( '#lastNameInput' ).val();
     let idNum = $( '#idInput' ).val();
     let jobTitle = $( '#titleInput' ).val();
-    let salary = $( '#salaryInput' ).val(); 
+    let salary = Number( $( '#salaryInput' ).val() ); 
     
     //Append the entered info into the table
-    $( '#firstNameCell' ).append( '<tr><td>' + firstName + '</tr></td>' ); 
-    $( '#lastNameCell' ).append( '<tr><td>' + lastName + '</tr></td>' );
-    $( '#idCell' ).append( '<tr><td>' + idNum + '</tr></td>' );
-    $( '#titleCell' ).append( '<tr><td>' + jobTitle + '</tr></td>' );
-    $( '#salaryCell' ).append( '<tr><td>' + salary + '</tr></td>' );
+    $( '#tableContainer' ).append(`
+    <tr>
+    <td>${firstName}</td>
+    <td>${lastName}</td>
+    <td>${idNum}</td>
+    <td>${jobTitle}</td>
+    <td>${salary}</td>
+    <td><button class="deleteButton">Delete</button></td>
+    </tr>
+    `)
 
     //empty inputs
     $( '#firstNameInput' ).val( '' );
@@ -46,9 +53,5 @@ function infoSubmit() {
 
 function removeInfo() {
     console.log( 'User info deleted' );
-    $('#firstNameCell').empty();
-    $('#lastNameCell').empty();
-    $('#idCell').empty();
-    $('#titleCell').empty();
-    $('#salaryCell').empty();
+    $(this).closest('tr').remove();
 }
