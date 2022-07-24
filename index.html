@@ -10,11 +10,7 @@
     <title>Salary Calculator</title>
     <heading>Salary Calculator</heading>
 </head>
-<style>
-    table, th, td {
-        border: 1px solid black;
-    }
-</style>
+
 <body>
     <h1>Add Employee</h1>
 
@@ -29,7 +25,7 @@
     <button id="submitButton">Submit</button>
    
     <!-- EMPLOYEE INFO TABLE -->
-<table style="width:55%">
+<table style="width:75%">
         <!-- Headers -->
     <tr>
         <th>First Name</th>
@@ -40,14 +36,16 @@
         <th></th>
     </tr>
         <!-- Variable Cells -->
+    <div id="tableContainer">
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td id="firstNameCell"></td>
+        <td id="lastNameCell"></td>
+        <td id="idCell"></td>
+        <td id="titleCell"></td>
+        <td id="salaryCell"></td>
+        <td id="deleteButtonCell"></td>
     </tr>
+    </div>
     
 </table>
 </body>

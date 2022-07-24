@@ -18,13 +18,12 @@ function infoSubmit() {
     let jobTitle = $( '#titleInput' ).val();
     let salary = $( '#salaryInput' ).val(); 
     
+    //Append the entered info into the table
+    $( '#firstNameCell' ).append('<tr><td>' + firstName + '</tr></td>'); // it goes into the first box. Now I need to incorporate appending a new cell.
 
 
 
 
-
-
-    
     //empty inputs
     $( '#firstNameInput' ).val( '' );
     $( '#lastNameInput' ).val( '' );

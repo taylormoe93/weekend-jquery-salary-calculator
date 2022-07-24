@@ -63,3 +63,5 @@ then add a red background color to the total monthly cost INPUT.
 A delete BUTTON:
 - removes an employee from the DOM
 
+Table:
+- Duplicates to a new cell and fills with inputted info (check color block for code). Looks like an append?
