@@ -5,7 +5,8 @@ $(document).ready(handleReady);
 function handleReady() {
     console.log('Document ready');
     //click handlers go here
-    $( '#submitButton' ).on('click', infoSubmit )
+    $( '#submitButton' ).on( 'click', infoSubmit )
+    $( '#deleteButton' ).on( 'click', removeInfo )
 } // end handleReady function
 
 function infoSubmit() {
@@ -36,10 +37,18 @@ function infoSubmit() {
     // let monthlyCosts =
     // Take the inputted info and put it into a variable that displays on bottom of screen as a heading.
     // Link to the heading with an id and use jquery to update the heading with the number.
-
+    
 
 
 
 } // end infoSubmit function
 
 
+function removeInfo() {
+    console.log( 'User info deleted' );
+    $('#firstNameCell').empty();
+    $('#lastNameCell').empty();
+    $('#idCell').empty();
+    $('#titleCell').empty();
+    $('#salaryCell').empty();
+}
